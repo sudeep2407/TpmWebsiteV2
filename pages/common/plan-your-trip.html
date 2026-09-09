@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="48x48" href="../../images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../../images/favicon.png">
+  <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+<title>Plan Your Trip | The Pine Mist</title>
+  <meta name="description" content="Get a customized itinerary from The Pine Mist. Tell us your destination, dates, travellers and preferences.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="The Pine Mist">
+  <meta name="theme-color" content="#1a3c34">
+  <meta property="og:site_name" content="The Pine Mist">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Plan Your Trip | The Pine Mist">
+  <meta property="og:description" content="Get a customized itinerary from The Pine Mist. Tell us your destination, dates, travellers and preferences.">
+  <meta property="og:image" content="../../images/kashmir/gulmarg-1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Plan Your Trip | The Pine Mist">
+  <meta name="twitter:description" content="Get a customized itinerary from The Pine Mist. Tell us your destination, dates, travellers and preferences.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo"><img src="../../images/logo.png" alt="" class="logo-img"><span class="logo-text">The Pine Mist</span></a>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="../../index.html" class="nav-link">Home</a></li>
+          <li class="has-dropdown">
+            <a href="destinations.html" class="nav-link">Destinations <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+              <li class="dropdown-label">Northern Himalayas</li>
+              <li><a href="../kashmir/kashmir.html">Kashmir</a></li>
+              <li><a href="../himachal-pradesh/himachal.html">Himachal Pradesh</a></li>
+              <li><a href="../ladakh/ladakh.html">Ladakh</a></li>
+              <li><a href="../uttarakhand/uttarakhand.html">Uttarakhand</a></li>
+              <li class="dropdown-label">North East Himalayas</li>
+              <li><a href="../arunachal-pradesh/arunachal.html">Arunachal Pradesh</a></li>
+              <li><a href="../meghalaya/meghalaya.html">Meghalaya</a></li>
+              <li><a href="../sikkim/sikkim.html">Sikkim</a></li>
+              <li><a href="../darjeeling/darjeeling.html">Darjeeling</a></li>
+              <li class="dropdown-label">Deserts & Beaches</li>
+              <li><a href="../rajasthan/rajasthan.html">Rajasthan</a></li>
+              <li><a href="../odisha/odisha.html">Odisha</a></li>
+            </ul>
+          </li>
+          <li><a href="packages.html" class="nav-link">Tour Packages</a></li>
+          <li><a href="travel-guides.html" class="nav-link">Travel Guides</a></li>
+          <li><a href="plan-your-trip.html" class="nav-link cta-nav active">Plan Your Trip</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero" style="background:linear-gradient(135deg,rgba(26,60,52,.82),rgba(45,106,90,.72)),url('../../images/meghalaya/shillong-1.jpg') center/cover;">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../../index.html">Home</a> <span>/</span> <span>Plan Your Trip</span>
+      </div>
+      <h1>Plan Your Perfect Trip</h1>
+      <p>Share a few details and we’ll create a personalized itinerary for you.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="planner-wrapper" style="grid-template-columns: 1fr; max-width: 700px; margin: 0 auto;">
+        <form class="planner-form" id="tripPlannerForm" style="background: #fff; color: var(--text); box-shadow: var(--shadow);">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Destination *</label>
+              <select name="destination" required>
+                <option value="">Select destination</option>
+                <option value="Kashmir">Kashmir</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Ladakh">Ladakh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Darjeeling">Darjeeling</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Odisha">Odisha</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Travel Date *</label>
+              <input type="date" name="travel-date" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Number of Days</label>
+              <select name="days">
+                <option value="4-5">4–5 Days</option>
+                <option value="5-6">5–6 Days</option>
+                <option value="6-7" selected>6–7 Days</option>
+                <option value="7-9">7–9 Days</option>
+                <option value="10+">10+ Days</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Travellers</label>
+              <select name="travellers" required>
+                <option value="">Select travellers</option>
+                <option value="Couple">Couple</option>
+                <option value="Family">Family</option>
+                <option value="Group">Group</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Trip Type</label>
+              <select name="trip-type" required>
+                <option value="">Select trip type</option>
+                <option value="Honeymoon">Honeymoon</option>
+                <option value="Family">Family</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Corporate">Corporate</option>
+                <option value="Customized">Customized</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Budget Range (approx.)</label>
+              <select name="budget">
+                <option value="">Select range</option>
+                <option value="Under ₹30,000">Under ₹30,000</option>
+                <option value="₹30,000 – ₹50,000">₹30,000 – ₹50,000</option>
+                <option value="₹50,000 – ₹80,000">₹50,000 – ₹80,000</option>
+                <option value="₹80,000 – ₹1.2 Lakh">₹80,000 – ₹1.2 Lakh</option>
+                <option value="Above ₹1.2 Lakh">Above ₹1.2 Lakh</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group" style="margin-bottom: 16px;">
+            <label>Preferred Hotel Category</label>
+            <select name="hotel">
+              <option value="Standard">Standard</option>
+              <option value="Deluxe" selected>Deluxe</option>
+              <option value="Premium">Premium</option>
+            </select>
+          </div>
+          <div class="form-group" style="margin-bottom: 20px;">
+            <label>Special Requirements / Notes</label>
+            <textarea name="notes" placeholder="Any specific places, dietary needs, mobility concerns, etc."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Get My Custom Itinerary</button>
+          <p style="text-align:center; margin-top:14px; font-size:0.85rem; color:var(--text-muted);">
+            You’ll be connected on WhatsApp. We usually reply within a few hours.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../../index.html" class="logo"><img src="../../images/logo.png" alt="" class="logo-img"><span class="logo-text">The Pine Mist</span></a>
+          <p>Personalized holidays across India’s most beautiful destinations.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="../kashmir/kashmir.html">Kashmir</a></li>
+            <li><a href="../himachal-pradesh/himachal.html">Himachal Pradesh</a></li>
+            <li><a href="../ladakh/ladakh.html">Ladakh</a></li>
+            <li><a href="../uttarakhand/uttarakhand.html">Uttarakhand</a></li>
+            <li><a href="../arunachal-pradesh/arunachal.html">Arunachal Pradesh</a></li>
+            <li><a href="../meghalaya/meghalaya.html">Meghalaya</a></li>
+            <li><a href="../sikkim/sikkim.html">Sikkim</a></li>
+            <li><a href="../darjeeling/darjeeling.html">Darjeeling</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="packages.html">Tour Packages</a></li>
+            <li><a href="travel-guides.html">Travel Guides</a></li>
+            <li><a href="plan-your-trip.html">Plan Your Trip</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <p><i class="fas fa-phone"></i> +91 9147413942</p>
+          <p><i class="fab fa-whatsapp"></i> +91 9147413941</p>
+          <p><i class="fas fa-envelope"></i> info.thepinemist@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/pa58YV2hexYwV82s5" target="_blank" rel="noopener">Google Maps</a></p>
+          <p><i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/profile.php?id=100093943825114" target="_blank" rel="noopener">Facebook</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 The Pine Mist. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919147413941?text=Hi%20The%20Pine%20Mist%2C%20I%20want%20to%20plan%20a%20trip" class="floating-whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+  <div class="mobile-sticky-bar">
+    <a href="tel:+919147413942"><i class="fas fa-phone"></i> Call</a>
+    <a href="https://wa.me/919147413941" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <a href="plan-your-trip.html"><i class="fas fa-map"></i> Plan Trip</a>
+  </div>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

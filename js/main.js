@@ -68,6 +68,17 @@ document.querySelectorAll('.planner-form, #tripPlannerForm').forEach(form => {
   sessionStorage.setItem('tpm_utm', JSON.stringify(utm));
 })();
 
+// Prefill destination on Plan Your Trip from ?destination=
+(function prefillDestination() {
+  const sel = document.querySelector('select[name="destination"]');
+  if (!sel) return;
+  const raw = new URLSearchParams(window.location.search).get('destination');
+  if (!raw) return;
+  const wanted = raw.trim().toLowerCase();
+  const match = Array.from(sel.options).find((opt) => opt.value.toLowerCase() === wanted);
+  if (match) sel.value = match.value;
+})();
+
 // Package itinerary: car travels from Day 1 → last day as the user scrolls
 (function itineraryCar() {
   const layout = document.querySelector('.itin-layout');

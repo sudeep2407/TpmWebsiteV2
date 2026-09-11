@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Replace with your live domain when the site is hosted, e.g.
-# Sitemap: https://www.thepinemist.com/sitemap.xml
+Sitemap: https://www.thepinemist.com/sitemap.xml
